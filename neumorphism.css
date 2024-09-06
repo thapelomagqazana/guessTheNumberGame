@@ -1,0 +1,135 @@
+/* General Reset */
+body,
+h1,
+p,
+input,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling with a soft, neutral background */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #e0e5ec; /* Light grey background for Neumorphism */
+  color: #333; /* Dark text color for contrast */
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Game container */
+.game-container {
+  background-color: #e0e5ec; /* Same as body background */
+  border-radius: 20px; /* Rounded corners */
+  padding: 30px;
+  max-width: 400px;
+  width: 90%; /* Responsive width */
+  margin: 0 auto;
+  box-shadow: 9px 9px 16px #bec3c9, -9px -9px 16px #ffffff; /* Neumorphic outer shadow */
+}
+
+/* Heading styling */
+h1 {
+  color: #333; /* Dark text */
+  margin-bottom: 20px;
+  font-size: 1.8rem; /* Larger font size */
+}
+
+/* Instruction styling */
+.instruction {
+  font-size: 1.2rem; /* Slightly smaller font size */
+  color: #666; /* Medium grey text */
+  margin-bottom: 20px;
+}
+
+/* Number display */
+.number-display {
+  font-size: 4rem;
+  background-color: #e0e5ec; /* Same as background for consistency */
+  color: #333; /* Dark text */
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: inset 6px 6px 12px #bec3c9, inset -6px -6px 12px #ffffff; /* Neumorphic inner shadow */
+}
+
+/* Input styling with Neumorphism */
+.guess-input {
+  font-size: 1.2rem;
+  padding: 12px;
+  width: 80%;
+  margin-top: 20px;
+  border: none;
+  border-radius: 12px; /* Rounded corners */
+  background-color: #e0e5ec; /* Same as background for consistency */
+  color: #333; /* Dark text */
+  text-align: center;
+  outline: none;
+  box-shadow: inset 6px 6px 12px #bec3c9, inset -6px -6px 12px #ffffff; /* Neumorphic inner shadow */
+  transition: box-shadow 0.3s; /* Smooth shadow transition */
+}
+
+/* Button styling with Neumorphism */
+button {
+  font-size: 1.2rem;
+  padding: 12px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px; /* Rounded corners */
+  background-color: #e0e5ec; /* Same as background for consistency */
+  color: #333; /* Dark text */
+  box-shadow: 9px 9px 16px #bec3c9, -9px -9px 16px #ffffff; /* Neumorphic outer shadow */
+  transition: box-shadow 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+/* Check button */
+.check-button {
+  box-shadow: 6px 6px 12px #bec3c9, -6px -6px 12px #ffffff; /* Neumorphic button effect */
+}
+
+.check-button:hover {
+  box-shadow: inset 6px 6px 12px #bec3c9, inset -6px -6px 12px #ffffff; /* Inner shadow on hover */
+  transform: translateY(-2px); /* Lift effect */
+}
+
+/* Play again button */
+.again-button {
+  box-shadow: 6px 6px 12px #bec3c9, -6px -6px 12px #ffffff; /* Neumorphic button effect */
+}
+
+.again-button:hover {
+  box-shadow: inset 6px 6px 12px #bec3c9, inset -6px -6px 12px #ffffff; /* Inner shadow on hover */
+  transform: translateY(-2px); /* Lift effect */
+}
+
+/* Message styling */
+.message {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #666; /* Medium grey text */
+  min-height: 30px; /* Minimum height to maintain layout */
+}
+
+/* Score container */
+.score-container {
+  margin-top: 30px;
+  color: #333; /* Dark text */
+}
+
+/* Score and Highscore display */
+.score,
+.highscore {
+  font-weight: bold;
+  color: #333; /* Dark text */
+}
