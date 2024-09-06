@@ -10,6 +10,18 @@ const checkButton = document.querySelector(".check-button");
 const againButton = document.querySelector(".again-button");
 const maxChances = 20;
 
+// Function to shake the number display for wrong guess
+const shakeElement = (element) => {
+  element.classList.add("shake");
+  setTimeout(() => element.classList.remove("shake"), 500);
+};
+
+// Function to bounce the number display for correct guess
+const bounceElement = (element) => {
+  element.classList.add("bounce");
+  setTimeout(() => element.classList.remove("bounce"), 500);
+};
+
 // Generate a random number between 1 and 20
 const generateSecretNumber = () => Math.trunc(Math.random() * 20) + 1;
 
@@ -41,9 +53,11 @@ const compareGuess = (userGuess, secretNumber) => {
       displayMessage("🎉Correct Number!");
       numberDisplay.textContent = secretNumber;
       updateHiScore();
+      bounceElement(numberDisplay); // Bounce effect for correct guess
     } else {
       displayMessage(userGuess > secretNumber ? "📈Too High!" : "📉Too Low!");
       updateScore();
+      shakeElement(numberDisplay); // Shake effect for wrong input
     }
   } else {
     displayMessage("😣Game Over!");
@@ -57,7 +71,10 @@ highScore.textContent = localStorage.getItem("HighScore") || 0;
 checkButton.addEventListener("click", function () {
   const userGuess = getUserInput();
   if (!userGuess || userGuess < 1 || userGuess > 20) {
-    displayMessage("❌Invalid Number");
+    displayMessage(
+      `❌Invalid Number! Pick a number between 1 and ${maxChances}`
+    );
+    shakeElement(numberDisplay); // Shake effect for wrong input
   } else {
     compareGuess(userGuess, randomNumber);
   }
