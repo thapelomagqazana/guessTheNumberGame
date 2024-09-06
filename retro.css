@@ -1,0 +1,147 @@
+/* Import pixelated font */
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+/* General Reset */
+body,
+h1,
+p,
+input,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling for retro theme */
+body {
+  font-family: "Press Start 2P", cursive; /* Pixelated font */
+  background: linear-gradient(
+    45deg,
+    #1a1a1a 25%,
+    #333 25%,
+    #333 50%,
+    #1a1a1a 50%,
+    #1a1a1a 75%,
+    #333 75%,
+    #333
+  ); /* Pixelated background */
+  background-size: 20px 20px; /* Makes the gradient look pixelated */
+  color: #fff; /* Light text color */
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Game container */
+.game-container {
+  background-color: #111; /* Dark background */
+  border: 3px solid #fff; /* White border for retro feel */
+  padding: 20px;
+  max-width: 400px;
+  width: 90%; /* Responsive width */
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+/* Heading styling */
+h1 {
+  color: #ffcc00; /* Bright yellow color */
+  margin-bottom: 20px;
+}
+
+/* Instruction styling */
+.instruction {
+  font-size: 1rem; /* Slightly smaller font size */
+  color: #fff; /* White text */
+  margin-bottom: 20px;
+}
+
+/* Number display */
+.number-display {
+  font-size: 4rem;
+  background-color: #333; /* Dark background */
+  color: #ffcc00; /* Bright yellow text */
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #fff; /* White border */
+  border-radius: 5px; /* Slightly rounded corners */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+/* Input styling */
+.guess-input {
+  font-size: 1rem;
+  padding: 10px;
+  width: 80%;
+  margin-top: 20px;
+  border: 3px solid #fff; /* White border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #222; /* Dark background */
+  color: #ffcc00; /* Yellow text */
+  text-align: center;
+  outline: none;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3); /* Inset shadow for depth */
+}
+
+/* Button styling */
+button {
+  font-size: 1rem;
+  padding: 12px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  border: 3px solid #fff; /* White border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #555; /* Dark grey background */
+  color: #ffcc00; /* Yellow text */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+/* Check button */
+.check-button {
+  background-color: #28a745; /* Bright green for "Check!" */
+}
+
+.check-button:hover {
+  background-color: #218838; /* Darker green on hover */
+  transform: translateY(-2px); /* Lift effect */
+}
+
+/* Play again button */
+.again-button {
+  background-color: #dc3545; /* Bright red for "Play Again!" */
+}
+
+.again-button:hover {
+  background-color: #c82333; /* Darker red on hover */
+  transform: translateY(-2px); /* Lift effect */
+}
+
+/* Message styling */
+.message {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #ffcc00; /* Bright yellow color */
+  min-height: 30px; /* Minimum height to maintain layout */
+}
+
+/* Score container */
+.score-container {
+  margin-top: 30px;
+  color: #fff; /* White text */
+}
+
+/* Score and Highscore display */
+.score,
+.highscore {
+  font-weight: bold;
+  color: #ffcc00; /* Bright yellow for better visibility */
+}
