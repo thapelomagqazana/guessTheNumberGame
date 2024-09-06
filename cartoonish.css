@@ -1,0 +1,183 @@
+/* Import playful, hand-drawn font */
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+/* General Reset */
+body,
+h1,
+p,
+input,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling with a playful, colorful background */
+body {
+  font-family: "Permanent Marker", cursive; /* Hand-drawn style font */
+  background: linear-gradient(
+    135deg,
+    #ffecd2 0%,
+    #fcb69f 100%
+  ); /* Playful gradient */
+  color: #333; /* Dark text color */
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent scrolling */
+}
+
+/* Game container */
+.game-container {
+  background-color: #fff; /* White background */
+  border: 4px solid #ff8c00; /* Bright orange border */
+  border-radius: 20px; /* Rounded corners */
+  padding: 30px;
+  max-width: 400px;
+  width: 90%; /* Responsive width */
+  margin: 0 auto;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s; /* Smooth transformation */
+}
+
+/* Heading styling */
+h1 {
+  color: #ff6347; /* Tomato color for a fun vibe */
+  margin-bottom: 20px;
+  font-size: 2.5rem; /* Larger font size */
+  text-shadow: 2px 2px #ffcccb; /* Text shadow for playful effect */
+}
+
+/* Instruction styling */
+.instruction {
+  font-size: 1.4rem; /* Slightly larger font size */
+  color: #444; /* Darker grey text */
+  margin-bottom: 20px;
+}
+
+/* Number display */
+.number-display {
+  font-size: 4rem;
+  background-color: #fffae6; /* Light yellow background */
+  color: #ff8c00; /* Bright orange text */
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px; /* Rounded corners */
+  border: 3px solid #ff8c00; /* Orange border */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: transform 0.3s; /* Smooth transformation */
+}
+
+/* Input styling with playful effect */
+.guess-input {
+  font-size: 1.4rem;
+  padding: 12px;
+  width: 80%;
+  margin-top: 20px;
+  border: 2px dashed #ff6347; /* Dashed border for a hand-drawn effect */
+  border-radius: 12px; /* Rounded corners */
+  background-color: #fffaf0; /* Light floral white background */
+  color: #333; /* Dark text */
+  text-align: center;
+  outline: none;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Button styling with playful colors */
+button {
+  font-size: 1.4rem;
+  padding: 12px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px; /* Rounded corners */
+  background-color: #ffd700; /* Bright yellow background */
+  color: #fff; /* White text */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Check button */
+.check-button {
+  background-color: #32cd32; /* Lime green background */
+}
+
+.check-button:hover {
+  background-color: #2eb82e; /* Darker green on hover */
+  transform: translateY(-5px); /* Lift effect */
+}
+
+/* Play again button */
+.again-button {
+  background-color: #ff4500; /* Orange-red background */
+}
+
+.again-button:hover {
+  background-color: #e63900; /* Darker red on hover */
+  transform: translateY(-5px); /* Lift effect */
+}
+
+/* Message styling */
+.message {
+  margin-top: 20px;
+  font-size: 1.4rem;
+  color: #ff6347; /* Tomato color for fun feedback */
+  min-height: 30px; /* Minimum height to maintain layout */
+  text-shadow: 1px 1px #ffcccb; /* Text shadow for playful effect */
+}
+
+/* Score container */
+.score-container {
+  margin-top: 30px;
+  color: #444; /* Darker grey text */
+}
+
+/* Score and Highscore display */
+.score,
+.highscore {
+  font-weight: bold;
+  color: #ff8c00; /* Bright orange text */
+}
+
+/* Animations */
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20%,
+  60% {
+    transform: translateX(-10px);
+  }
+  40%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Animation classes */
+.shake {
+  animation: shake 0.5s;
+}
+
+.bounce {
+  animation: bounce 0.5s;
+}
