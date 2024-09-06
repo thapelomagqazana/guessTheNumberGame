@@ -1,0 +1,160 @@
+/* General Reset */
+body,
+h1,
+p,
+input,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling with a vibrant gradient background */
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(
+    135deg,
+    #ff9a9e 0%,
+    #fecfef 50%,
+    #feada6 100%
+  ); /* Vibrant gradient */
+  color: #fff; /* Light text color */
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent scrolling */
+}
+
+/* Game container */
+.game-container {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Transparent white background for glass effect */
+  backdrop-filter: blur(15px); /* Frosted glass effect */
+  -webkit-backdrop-filter: blur(15px); /* For Safari */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Light border */
+  border-radius: 20px; /* Rounded corners */
+  padding: 30px;
+  max-width: 400px;
+  width: 90%; /* Responsive width */
+  margin: 0 auto;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Heading styling */
+h1 {
+  color: #fff; /* White text */
+  margin-bottom: 20px;
+  font-size: 1.8rem; /* Larger font size */
+}
+
+/* Instruction styling */
+.instruction {
+  font-size: 1.2rem; /* Slightly smaller font size */
+  color: #fff; /* White text */
+  margin-bottom: 20px;
+}
+
+/* Number display */
+.number-display {
+  font-size: 4rem;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Transparent white for glass effect */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  color: #fff; /* White text */
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px; /* Rounded corners */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Light border */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Input styling with glass effect */
+.guess-input {
+  font-size: 1.2rem;
+  padding: 12px;
+  width: 80%;
+  margin-top: 20px;
+  border: none;
+  border-radius: 12px; /* Rounded corners */
+  background: rgba(255, 255, 255, 0.1); /* Transparent white for glass effect */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  color: #fff; /* White text */
+  text-align: center;
+  outline: none;
+  box-shadow: inset 0 2px 5px rgba(255, 255, 255, 0.2); /* Inset shadow for depth */
+}
+
+/* Button styling with glass effect */
+button {
+  font-size: 1.2rem;
+  padding: 12px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px; /* Rounded corners */
+  background: rgba(255, 255, 255, 0.2); /* Transparent white for glass effect */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  color: #fff; /* White text */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Check button */
+.check-button {
+  background-color: rgba(40, 167, 69, 0.2); /* Light green glass effect */
+}
+
+.check-button:hover {
+  background-color: rgba(40, 167, 69, 0.4); /* Darker green on hover */
+  transform: translateY(-2px); /* Lift effect */
+}
+
+/* Play again button */
+.again-button {
+  background-color: rgba(220, 53, 69, 0.2); /* Light red glass effect */
+}
+
+.again-button:hover {
+  background-color: rgba(220, 53, 69, 0.4); /* Darker red on hover */
+  transform: translateY(-2px); /* Lift effect */
+}
+
+/* Message styling */
+.message {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #fff; /* White text */
+  min-height: 30px; /* Minimum height to maintain layout */
+}
+
+/* Score container */
+.score-container {
+  margin-top: 30px;
+  color: #fff; /* White text */
+}
+
+/* Score and Highscore display */
+.score,
+.highscore {
+  font-weight: bold;
+  color: #ffcc00; /* Bright yellow for better visibility */
+}
