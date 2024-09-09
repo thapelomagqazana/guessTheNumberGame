@@ -68,11 +68,15 @@ const compareGuess = (userGuess, secretNumber) => {
 const randomNumber = generateSecretNumber();
 highScore.textContent = localStorage.getItem("HighScore") || 0;
 
+// Event listener for 'Check' button
 checkButton.addEventListener("click", function () {
   const userGuess = getUserInput();
-  if (!userGuess || userGuess < 1 || userGuess > 20) {
+  if (!userGuess) {
+    displayMessage(`⛔ No number`);
+    shakeElement(numberDisplay); // Shake effect for wrong input
+  } else if (userGuess < 1 || userGuess > maxChances) {
     displayMessage(
-      `❌Invalid Number! Pick a number between 1 and ${maxChances}`
+      `⛔ Invalid Number! Pick a number between 1 and ${maxChances}`
     );
     shakeElement(numberDisplay); // Shake effect for wrong input
   } else {
@@ -81,6 +85,7 @@ checkButton.addEventListener("click", function () {
   guess.value = "";
 });
 
+// Event listener for 'Play Again' button
 againButton.addEventListener("click", function () {
   score.textContent = maxChances;
   numberDisplay.textContent = "?";
