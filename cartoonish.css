@@ -45,7 +45,8 @@ body {
 }
 
 /* Heading styling */
-h1 {
+h1,
+.modal h2 {
   color: #ff6347; /* Tomato color for a fun vibe */
   margin-bottom: 20px;
   font-size: 2.5rem; /* Larger font size */
@@ -53,7 +54,8 @@ h1 {
 }
 
 /* Instruction styling */
-.instruction {
+.instruction,
+.modal-instruction {
   font-size: 1.4rem; /* Slightly larger font size */
   color: #444; /* Darker grey text */
   margin-bottom: 20px;
@@ -91,40 +93,6 @@ h1 {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
-/* Button styling with playful colors */
-button {
-  font-size: 1.4rem;
-  padding: 12px 20px;
-  margin-top: 20px;
-  cursor: pointer;
-  border: none;
-  border-radius: 12px; /* Rounded corners */
-  background-color: #ffd700; /* Bright yellow background */
-  color: #fff; /* White text */
-  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-}
-
-/* Check button */
-.check-button {
-  background-color: #32cd32; /* Lime green background */
-}
-
-.check-button:hover {
-  background-color: #2eb82e; /* Darker green on hover */
-  transform: translateY(-5px); /* Lift effect */
-}
-
-/* Play again button */
-.again-button {
-  background-color: #ff4500; /* Orange-red background */
-}
-
-.again-button:hover {
-  background-color: #e63900; /* Darker red on hover */
-  transform: translateY(-5px); /* Lift effect */
-}
-
 /* Message styling */
 .message {
   margin-top: 20px;
@@ -145,6 +113,99 @@ button {
 .highscore {
   font-weight: bold;
   color: #ff8c00; /* Bright orange text */
+}
+
+/* Modal styles */
+.modal {
+  display: flex; /* Hidden by default */
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  font-family: "Permanent marker", cursive; /* Hand-drawn style font */
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 30px;
+  border: 4px solid #ff8c00; /* Bright orange border */
+  border-radius: 20px; /* Rounded corners */
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  max-width: 400px;
+  width: 90%; /* Responsive width */
+}
+
+/* Dropdown menu styles */
+.difficulty-dropdown {
+  font-size: 1.4rem;
+  padding: 10px;
+  border: 2px dashed #ff6347;
+  border-radius: 12px;
+  background-color: #fffaf0;
+  color: #333;
+  margin-bottom: 20px;
+  width: 80%;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Button styles */
+button {
+  font-size: 1.4rem;
+  padding: 12px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px; /* Rounded corners */
+  background-color: #ffd700; /* Bright yellow background */
+  color: #fff; /* White text */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.start-button {
+  font-size: 1.6rem;
+  padding: 10px 20px;
+  background-color: #ffd700;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.start-button:hover {
+  background-color: #ff8c00;
+  transform: translateY(-5px); /* Lift effect */
+}
+
+/* Check button */
+.check-button {
+  background-color: #32cd32; /* Lime green background */
+}
+
+.check-button:hover {
+  background-color: #2eb82e; /* Darker green on hover */
+  transform: translateY(-5px); /* Lift effect */
+}
+
+/* Play again button */
+.again-button {
+  background-color: #ff4500; /* Orange-red background */
+}
+
+.again-button:hover {
+  background-color: #e63900; /* Darker red on hover */
+  transform: translateY(-5px); /* Lift effect */
 }
 
 /* Animations */
